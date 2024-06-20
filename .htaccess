@@ -23,6 +23,9 @@
 # Disable index view
 Options -Indexes
 
+# Disable server signature 
+ServerSignature Off
+
 # Hide a specific file
 <Files ~ "\.(env|json|config.js|md|gitignore|gitattributes|lock)$">
     Order allow,deny

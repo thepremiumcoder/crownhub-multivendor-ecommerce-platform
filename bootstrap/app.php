@@ -12,8 +12,19 @@
 */
 
 $app = new Illuminate\Foundation\Application(
-    realpath(__DIR__.'/../')
+    realpath(__DIR__ . '/../')
 );
+
+
+/*
+|--------------------------------------------------------------------------
+| Change the .env file location to /config/ServerConfig/
+|--------------------------------------------------------------------------
+*/
+$app->useEnvironmentPath(
+    base_path() . '/config/ServerConfig/'
+);
+
 
 /*
 |--------------------------------------------------------------------------
